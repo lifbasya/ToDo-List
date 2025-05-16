@@ -85,7 +85,7 @@ function App() {
             />
             <button
               onClick={addTodo}
-              className="w-full bg-green-600 text-white rounded-md py-2 hover:bg-green-700"
+              className="w-full bg-green-600 text-white rounded-md py-2 hover:bg-green-700 cursor-pointer"
             >
               Tambah
             </button>
@@ -96,7 +96,7 @@ function App() {
         <div className="flex space-x-2">
           <button
             onClick={() => setShowInput(true)}
-            className="flex-[2] bg-blue-600 text-white text-2xl font-bold py-2 rounded-md hover:bg-blue-700"
+            className="flex-[2] bg-blue-600 text-white text-2xl font-bold py-2 rounded-md hover:bg-blue-700 cursor-pointer"
           >
             +
           </button>
@@ -108,7 +108,7 @@ function App() {
                 localStorage.removeItem("todos");
               }
             }}
-            className="flex-1 bg-red-500 text-white text-md py-2 rounded-md hover:bg-red-600"
+            className="flex-1 bg-red-500 text-white text-md py-2 rounded-md hover:bg-red-600 cursor-pointer"
           >
             Reset
           </button>
